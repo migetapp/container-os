@@ -33,3 +33,5 @@ jobs:
         run: python scripts/tag_aliases.py --repo $DOCKERHUB_REPO
         env:
           DOCKERHUB_REPO: miget/container-os
+          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
