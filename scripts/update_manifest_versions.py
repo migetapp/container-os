@@ -31,7 +31,7 @@ OS_PACKAGE_COMMANDS = {
     ),
     "alpine": (
         ["apk", "update"],
-        "apk info -e -v {package}",
+        "apk search -e {package}",
     ),
 }
 
