@@ -12,6 +12,7 @@
         "supervisor": "4.2.5-r4"
       },
       "dockerd": {
+        "containerd": "1.7.10-r3",
         "docker": "25.0.5-r1",
         "docker-cli-compose": "2.23.3-r3"
       },
@@ -35,6 +36,7 @@
         "supervisor": "4.2.5-r5"
       },
       "dockerd": {
+        "containerd": "1.7.17-r2",
         "docker": "26.1.5-r0",
         "docker-cli-compose": "2.27.0-r3"
       },
@@ -58,6 +60,7 @@
         "supervisor": "4.2.5-r5"
       },
       "dockerd": {
+        "containerd": "2.0.0-r5",
         "docker": "27.3.1-r5",
         "docker-cli-compose": "2.31.0-r5"
       },
@@ -81,6 +84,7 @@
         "supervisor": "4.2.5-r5"
       },
       "dockerd": {
+        "containerd": "2.1.5-r1",
         "docker": "28.3.3-r4",
         "docker-cli-compose": "2.36.2-r4"
       },

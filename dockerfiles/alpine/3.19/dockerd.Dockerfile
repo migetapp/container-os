@@ -12,7 +12,8 @@ RUN apk add --no-cache \
     fuse3 \
     sudo \
     docker \
-    docker-cli-compose
+    docker-cli-compose \
+    containerd
 
 RUN set -eux; \
     group_name=$(getent group 1000 | cut -d: -f1 || true); \
