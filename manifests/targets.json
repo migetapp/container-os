@@ -83,7 +83,8 @@
           ],
           "dockerd": [
             "docker",
-            "docker-cli-compose"
+            "docker-cli-compose",
+            "containerd"
           ],
           "podman": [
             "podman",
@@ -109,7 +110,8 @@
           ],
           "dockerd": [
             "docker",
-            "docker-cli-compose"
+            "docker-cli-compose",
+            "containerd"
           ],
           "podman": [
             "podman",
@@ -135,7 +137,8 @@
           ],
           "dockerd": [
             "docker",
-            "docker-cli-compose"
+            "docker-cli-compose",
+            "containerd"
           ],
           "podman": [
             "podman",
@@ -161,7 +164,8 @@
           ],
           "dockerd": [
             "docker",
-            "docker-cli-compose"
+            "docker-cli-compose",
+            "containerd"
           ],
           "podman": [
             "podman",

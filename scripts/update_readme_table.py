@@ -64,7 +64,7 @@ def generate_table(targets, versions):
         ("Docker Compose", lambda os, ver, eng: compose_version),
         ("Docker CE", get_docker_version),
         ("Podman", lambda os, ver, eng: get_version(versions, os, ver, "podman", eng) if eng == "podman" else "-"),
-        ("Containerd", lambda os, ver, eng: get_version(versions, os, ver, "containerd.io", eng) if eng == "dockerd" and os == "ubuntu" else "-"),
+        ("Containerd", lambda os, ver, eng: get_version(versions, os, ver, "containerd.io" if os == "ubuntu" else "containerd", eng) if eng == "dockerd" else "-"),
         ("OpenSSH", lambda os, ver, eng: get_version(versions, os, ver, "openssh-server" if os == "ubuntu" else "openssh", eng)),
         ("Supervisor", lambda os, ver, eng: get_version(versions, os, ver, "supervisor", eng)),
     ]

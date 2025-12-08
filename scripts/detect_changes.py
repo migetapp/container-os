@@ -32,6 +32,7 @@ def get_significant_packages():
         "docker",
         "podman",
         "containerd.io",
+        "containerd",
         "docker-compose-plugin",
         "docker-cli-compose",
     ]
