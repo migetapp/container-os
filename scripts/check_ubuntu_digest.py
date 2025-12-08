@@ -25,13 +25,14 @@ def fetch_digest(tag: str) -> str:
         "manifest",
         "inspect",
         f"ubuntu:{tag}",
-        "--verbose",
     ]
     output = subprocess.check_output(cmd, text=True)
-    for line in output.splitlines():
-        line = line.strip()
-        if line.startswith("Digest:"):
-            return line.split("Digest:", 1)[1].strip()
+    data = json.loads(output)
+    # Find the amd64 linux manifest digest
+    for manifest in data.get("manifests", []):
+        platform = manifest.get("platform", {})
+        if platform.get("architecture") == "amd64" and platform.get("os") == "linux":
+            return manifest["digest"]
     raise RuntimeError(f"Digest not found in manifest output for ubuntu:{tag}")
 
 def main(version: str, record: bool) -> int:
