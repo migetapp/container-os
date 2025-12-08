@@ -54,7 +54,9 @@ def main():
     }
     
     try:
-        auth_response = requests.post(auth_url, json=auth_data)
+        # Docker Hub blocks default python-requests User-Agent with 500 error
+        auth_headers = {"User-Agent": "container-os/1.0"}
+        auth_response = requests.post(auth_url, json=auth_data, headers=auth_headers)
         auth_response.raise_for_status()
         jwt_token = auth_response.json().get("token")
         
