@@ -165,10 +165,6 @@ def fetch_all_package_versions(os_name: str, version: str, packages: List[str]) 
 
     return results
 
-def bump_patch_version(current: str) -> str:
-    major, minor, patch = current.split(".")
-    return f"{major}.{minor}.{int(patch) + 1}"
-
 def update_manifest(manifest: Dict, package_versions: Dict) -> UpdateResult:
     alias_updates: Dict[Tuple[str, str], str] = {}
     package_updates: Dict[Tuple[str, str, str], str] = {}
@@ -205,13 +201,13 @@ def update_manifest(manifest: Dict, package_versions: Dict) -> UpdateResult:
                     bucket_versions[package] = version_value
                     package_updates[(os_name, version_key, package)] = version_value
 
-    manifest_version_bumped = False
-    if alias_updates or package_updates:
-        manifest_version_bumped = True
-        manifest["version"] = bump_patch_version(manifest["version"])
+    # Update last_updated timestamp if there were any changes
+    has_updates = bool(alias_updates or package_updates)
+    if has_updates:
         manifest.setdefault("metadata", {})["last_updated"] = datetime.utcnow().isoformat(timespec="seconds") + "Z"
 
-    return UpdateResult(alias_updates, package_updates, manifest_version_bumped)
+    # Note: Version bumping is handled separately by bump_version.py in the workflow
+    return UpdateResult(alias_updates, package_updates, has_updates)
 
 def main(argv: List[str]) -> int:
     parser = argparse.ArgumentParser(description="Refresh manifest versions from upstream sources")
@@ -248,7 +244,7 @@ def main(argv: List[str]) -> int:
             for package, pkg_version in sorted(entries):
                 print(f"      {package}: {pkg_version}")
     if result.manifest_version_bumped:
-        print(f"Manifest version bumped to {manifest['version']}")
+        print("Updates detected - version bump needed")
     else:
         print("No updates detected.")
 

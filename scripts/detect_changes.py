@@ -63,6 +63,28 @@ def check_for_changes():
             "new_version": current_compose
         })
     
+    # Check alias_patch changes (base OS version updates like alpine 3.19.8 -> 3.19.9)
+    for os_name, os_versions in current_targets.get("targets", {}).items():
+        for version_key, metadata in os_versions.items():
+            current_patch = metadata.get("alias_patch", "")
+            prev_patch = ""
+            if prev_targets:
+                prev_patch = (
+                    prev_targets
+                    .get("targets", {})
+                    .get(os_name, {})
+                    .get(version_key, {})
+                    .get("alias_patch", "")
+                )
+            if current_patch and current_patch != prev_patch:
+                changes.append({
+                    "type": "alias_patch",
+                    "os": os_name,
+                    "os_version": version_key,
+                    "old_version": prev_patch,
+                    "new_version": current_patch
+                })
+    
     # Check package version changes
     for os_name, os_versions in current_versions.items():
         if os_name == "docker_compose_version":
@@ -108,6 +130,9 @@ def main():
         for change in changes:
             if change["type"] == "docker-compose":
                 print(f"  - Docker Compose: {change['old_version']} → {change['new_version']}")
+            elif change["type"] == "alias_patch":
+                old = change['old_version'] or '(new)'
+                print(f"  - {change['os']} {change['os_version']} base: {old} → {change['new_version']}")
             else:
                 old = change['old_version'] or '(new)'
                 print(f"  - {change['os']} {change['os_version']} ({change['section']}): {change['package']} {old} → {change['new_version']}")
