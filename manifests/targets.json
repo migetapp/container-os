@@ -1,11 +1,181 @@
 {
-  "version": "1.0.0",
-  "docker_compose_version": "v2.40.0",
+  "channels": {
+    "stable-alpine3.19-dockerd": {
+      "engine": "dockerd",
+      "os": "alpine",
+      "version": "3.19"
+    },
+    "stable-alpine3.19-podman": {
+      "engine": "podman",
+      "os": "alpine",
+      "version": "3.19"
+    },
+    "stable-alpine3.20-dockerd": {
+      "engine": "dockerd",
+      "os": "alpine",
+      "version": "3.20"
+    },
+    "stable-alpine3.20-podman": {
+      "engine": "podman",
+      "os": "alpine",
+      "version": "3.20"
+    },
+    "stable-alpine3.21-dockerd": {
+      "engine": "dockerd",
+      "os": "alpine",
+      "version": "3.21"
+    },
+    "stable-alpine3.21-podman": {
+      "engine": "podman",
+      "os": "alpine",
+      "version": "3.21"
+    },
+    "stable-alpine3.22-dockerd": {
+      "engine": "dockerd",
+      "os": "alpine",
+      "version": "3.22"
+    },
+    "stable-alpine3.22-podman": {
+      "engine": "podman",
+      "os": "alpine",
+      "version": "3.22"
+    },
+    "stable-ubuntu22-dockerd": {
+      "engine": "dockerd",
+      "os": "ubuntu",
+      "version": "22.04"
+    },
+    "stable-ubuntu22-podman": {
+      "engine": "podman",
+      "os": "ubuntu",
+      "version": "22.04"
+    },
+    "stable-ubuntu24-dockerd": {
+      "engine": "dockerd",
+      "os": "ubuntu",
+      "version": "24.04"
+    },
+    "stable-ubuntu24-podman": {
+      "engine": "podman",
+      "os": "ubuntu",
+      "version": "24.04"
+    }
+  },
+  "docker_compose_version": "v5.0.0",
+  "metadata": {
+    "last_updated": "2025-12-08T19:03:39Z"
+  },
   "targets": {
+    "alpine": {
+      "3.19": {
+        "alias_patch": "3.19.9",
+        "base": "3.19",
+        "packages": {
+          "common": [
+            "bash",
+            "supervisor",
+            "openssh",
+            "dcron",
+            "iptables-legacy",
+            "fuse-overlayfs",
+            "fuse3",
+            "sudo"
+          ],
+          "dockerd": [
+            "docker",
+            "docker-cli-compose"
+          ],
+          "podman": [
+            "podman",
+            "podman-docker",
+            "slirp4netns",
+            "shadow-subids"
+          ]
+        }
+      },
+      "3.20": {
+        "alias_patch": "3.20.8",
+        "base": "3.20",
+        "packages": {
+          "common": [
+            "bash",
+            "supervisor",
+            "openssh",
+            "dcron",
+            "iptables-legacy",
+            "fuse-overlayfs",
+            "fuse3",
+            "sudo"
+          ],
+          "dockerd": [
+            "docker",
+            "docker-cli-compose"
+          ],
+          "podman": [
+            "podman",
+            "podman-docker",
+            "slirp4netns",
+            "shadow-subids"
+          ]
+        }
+      },
+      "3.21": {
+        "alias_patch": "3.21.5",
+        "base": "3.21",
+        "packages": {
+          "common": [
+            "bash",
+            "supervisor",
+            "openssh",
+            "dcron",
+            "iptables-legacy",
+            "fuse-overlayfs",
+            "fuse3",
+            "sudo"
+          ],
+          "dockerd": [
+            "docker",
+            "docker-cli-compose"
+          ],
+          "podman": [
+            "podman",
+            "podman-docker",
+            "slirp4netns",
+            "shadow-subids"
+          ]
+        }
+      },
+      "3.22": {
+        "alias_patch": "3.22.2",
+        "base": "3.22",
+        "packages": {
+          "common": [
+            "bash",
+            "supervisor",
+            "openssh",
+            "dcron",
+            "iptables-legacy",
+            "fuse-overlayfs",
+            "fuse3",
+            "sudo"
+          ],
+          "dockerd": [
+            "docker",
+            "docker-cli-compose"
+          ],
+          "podman": [
+            "podman",
+            "podman-docker",
+            "slirp4netns",
+            "shadow-subids"
+          ]
+        }
+      }
+    },
     "ubuntu": {
       "22.04": {
-        "base": "22.04",
         "alias_patch": "22.04",
+        "base": "22.04",
         "packages": {
           "common": [
             "curl",
@@ -33,8 +203,8 @@
         }
       },
       "24.04": {
-        "base": "24.04",
         "alias_patch": "24.04",
+        "base": "24.04",
         "packages": {
           "common": [
             "curl",
@@ -64,174 +234,7 @@
           ]
         }
       }
-    },
-    "alpine": {
-      "3.19": {
-        "base": "3.19",
-        "alias_patch": "3.19.4",
-        "packages": {
-          "common": [
-            "bash",
-            "supervisor",
-            "openssh",
-            "dcron",
-            "iptables-legacy",
-            "fuse-overlayfs",
-            "fuse3",
-            "sudo"
-          ],
-          "dockerd": [
-            "docker",
-            "docker-cli-compose"
-          ],
-          "podman": [
-            "podman",
-            "podman-docker",
-            "slirp4netns",
-            "shadow-subids"
-          ]
-        }
-      },
-      "3.20": {
-        "base": "3.20",
-        "alias_patch": "3.20.3",
-        "packages": {
-          "common": [
-            "bash",
-            "supervisor",
-            "openssh",
-            "dcron",
-            "iptables-legacy",
-            "fuse-overlayfs",
-            "fuse3",
-            "sudo"
-          ],
-          "dockerd": [
-            "docker",
-            "docker-cli-compose"
-          ],
-          "podman": [
-            "podman",
-            "podman-docker",
-            "slirp4netns",
-            "shadow-subids"
-          ]
-        }
-      },
-      "3.21": {
-        "base": "3.21",
-        "alias_patch": "3.21.1",
-        "packages": {
-          "common": [
-            "bash",
-            "supervisor",
-            "openssh",
-            "dcron",
-            "iptables-legacy",
-            "fuse-overlayfs",
-            "fuse3",
-            "sudo"
-          ],
-          "dockerd": [
-            "docker",
-            "docker-cli-compose"
-          ],
-          "podman": [
-            "podman",
-            "podman-docker",
-            "slirp4netns",
-            "shadow-subids"
-          ]
-        }
-      },
-      "3.22": {
-        "base": "3.22",
-        "alias_patch": "3.22.0",
-        "packages": {
-          "common": [
-            "bash",
-            "supervisor",
-            "openssh",
-            "dcron",
-            "iptables-legacy",
-            "fuse-overlayfs",
-            "fuse3",
-            "sudo"
-          ],
-          "dockerd": [
-            "docker",
-            "docker-cli-compose"
-          ],
-          "podman": [
-            "podman",
-            "podman-docker",
-            "slirp4netns",
-            "shadow-subids"
-          ]
-        }
-      }
     }
   },
-  "channels": {
-    "stable-ubuntu22-dockerd": {
-      "os": "ubuntu",
-      "version": "22.04",
-      "engine": "dockerd"
-    },
-    "stable-ubuntu22-podman": {
-      "os": "ubuntu",
-      "version": "22.04",
-      "engine": "podman"
-    },
-    "stable-ubuntu24-dockerd": {
-      "os": "ubuntu",
-      "version": "24.04",
-      "engine": "dockerd"
-    },
-    "stable-ubuntu24-podman": {
-      "os": "ubuntu",
-      "version": "24.04",
-      "engine": "podman"
-    },
-    "stable-alpine3.19-dockerd": {
-      "os": "alpine",
-      "version": "3.19",
-      "engine": "dockerd"
-    },
-    "stable-alpine3.19-podman": {
-      "os": "alpine",
-      "version": "3.19",
-      "engine": "podman"
-    },
-    "stable-alpine3.20-dockerd": {
-      "os": "alpine",
-      "version": "3.20",
-      "engine": "dockerd"
-    },
-    "stable-alpine3.20-podman": {
-      "os": "alpine",
-      "version": "3.20",
-      "engine": "podman"
-    },
-    "stable-alpine3.21-dockerd": {
-      "os": "alpine",
-      "version": "3.21",
-      "engine": "dockerd"
-    },
-    "stable-alpine3.21-podman": {
-      "os": "alpine",
-      "version": "3.21",
-      "engine": "podman"
-    },
-    "stable-alpine3.22-dockerd": {
-      "os": "alpine",
-      "version": "3.22",
-      "engine": "dockerd"
-    },
-    "stable-alpine3.22-podman": {
-      "os": "alpine",
-      "version": "3.22",
-      "engine": "podman"
-    }
-  }
+  "version": "1.0.2"
 }

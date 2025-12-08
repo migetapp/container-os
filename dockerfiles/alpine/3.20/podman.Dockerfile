@@ -53,7 +53,7 @@ RUN set -eux; \
         *) echo "Unsupported architecture: $ARCH" && exit 1 ;; \
     esac; \
     wget -qO /usr/local/bin/docker-compose \
-        "https://github.com/docker/compose/releases/download/v2.40.0/docker-compose-linux-${COMPOSE_ARCH}"; \
+        "https://github.com/docker/compose/releases/download/v5.0.0/docker-compose-linux-${COMPOSE_ARCH}"; \
     chmod +x /usr/local/bin/docker-compose; \
     docker-compose version
 
