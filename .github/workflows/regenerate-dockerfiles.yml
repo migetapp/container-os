@@ -54,21 +54,14 @@ jobs:
       - name: Check for significant changes
         id: check_changes
         run: |
-          # Always run detect_changes.py to report what changed
-          if python scripts/detect_changes.py; then
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-            echo "Significant changes detected"
-          else
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-            echo "No significant changes detected"
-          fi
+          # Run detect_changes.py and capture the has_changes output
+          python scripts/detect_changes.py | tee /dev/stderr | grep -E '^has_changes=' >> $GITHUB_OUTPUT
           
           # Manual version input forces a release regardless of changes
           if [ -n "${{ inputs.version }}" ]; then
             echo "has_changes=true" >> $GITHUB_OUTPUT
             echo "Manual version specified: ${{ inputs.version }} - forcing release"
           fi
-        continue-on-error: true
       
       - name: Set version
         if: steps.check_changes.outputs.has_changes == 'true'
@@ -96,18 +89,23 @@ jobs:
           fi
       
       - name: Render Dockerfiles
+        if: steps.check_changes.outputs.has_changes == 'true'
         run: python scripts/render_dockerfiles.py
       
       - name: Update README component versions table
+        if: steps.check_changes.outputs.has_changes == 'true'
         run: python scripts/update_readme_table.py
       
       - name: Update README tag table
+        if: steps.check_changes.outputs.has_changes == 'true'
         run: python scripts/update_readme_tags.py
       
       - name: Generate changelog entry
+        if: steps.check_changes.outputs.has_changes == 'true'
         run: python scripts/update_changelog.py --auto
       
       - name: Get new version
+        if: steps.check_changes.outputs.has_changes == 'true'
         id: version
         run: |
           VERSION=$(python -c "import json; print(json.load(open('manifests/targets.json'))['version'])")
@@ -115,11 +113,13 @@ jobs:
           echo "New version: $VERSION"
       
       - name: Configure git
+        if: steps.check_changes.outputs.has_changes == 'true'
         run: |
           git config user.name "miget-bot"
           git config user.email "bot@miget.dev"
       
       - name: Create pull request
+        if: steps.check_changes.outputs.has_changes == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           commit-message: "chore: release v${{ steps.version.outputs.version }}"

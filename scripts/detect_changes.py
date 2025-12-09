@@ -137,10 +137,10 @@ def main():
             else:
                 old = change['old_version'] or '(new)'
                 print(f"  - {change['os']} {change['os_version']} ({change['section']}): {change['package']} {old} → {change['new_version']}")
-        sys.exit(0)
+        print("has_changes=true")
     else:
         print("No significant changes detected")
-        sys.exit(1)
+        print("has_changes=false")
 
 if __name__ == "__main__":
     main()
