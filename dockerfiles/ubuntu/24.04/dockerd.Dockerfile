@@ -56,7 +56,7 @@ RUN set -eux; \
         armv7l) COMPOSE_ARCH=armv7 ;; \
         *) echo "Unsupported architecture: $ARCH" && exit 1 ;; \
     esac; \
-    curl -fsSL "https://github.com/docker/compose/releases/download/v5.0.0/docker-compose-linux-${COMPOSE_ARCH}" \
+    curl -fsSL "https://github.com/docker/compose/releases/download/v5.0.1/docker-compose-linux-${COMPOSE_ARCH}" \
         -o /usr/local/bin/docker-compose; \
     chmod +x /usr/local/bin/docker-compose; \
     docker-compose version
