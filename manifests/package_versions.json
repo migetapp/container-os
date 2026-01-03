@@ -115,7 +115,7 @@
         "docker-buildx-plugin": "0.30.1-1~ubuntu.22.04~jammy",
         "docker-ce": "5:29.1.3-1~ubuntu.22.04~jammy",
         "docker-ce-cli": "5:29.1.3-1~ubuntu.22.04~jammy",
-        "docker-compose-plugin": "5.0.0-1~ubuntu.22.04~jammy"
+        "docker-compose-plugin": "5.0.1-1~ubuntu.22.04~jammy"
       },
       "podman": {
         "podman": "3.4.4+ds1-1ubuntu1.22.04.3",
@@ -140,7 +140,7 @@
         "docker-buildx-plugin": "0.30.1-1~ubuntu.24.04~noble",
         "docker-ce": "5:29.1.3-1~ubuntu.24.04~noble",
         "docker-ce-cli": "5:29.1.3-1~ubuntu.24.04~noble",
-        "docker-compose-plugin": "5.0.0-1~ubuntu.24.04~noble"
+        "docker-compose-plugin": "5.0.1-1~ubuntu.24.04~noble"
       },
       "podman": {
         "ca-certificates": "20240203",
