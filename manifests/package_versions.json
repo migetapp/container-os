@@ -84,13 +84,13 @@
         "supervisor": "4.2.5-r5"
       },
       "dockerd": {
-        "containerd": "2.1.5-r1",
-        "docker": "28.3.3-r4",
-        "docker-cli-compose": "2.36.2-r4"
+        "containerd": "2.1.5-r2",
+        "docker": "28.3.3-r5",
+        "docker-cli-compose": "2.36.2-r5"
       },
       "podman": {
-        "podman": "5.6.2-r2",
-        "podman-docker": "5.6.2-r2",
+        "podman": "5.6.2-r3",
+        "podman-docker": "5.6.2-r3",
         "shadow-subids": "4.17.3-r0",
         "slirp4netns": "1.3.1-r0",
         "uidmap": "1.4.3.22-r2"
@@ -113,8 +113,8 @@
       "dockerd": {
         "containerd.io": "2.2.1-1~ubuntu.22.04~jammy",
         "docker-buildx-plugin": "0.30.1-1~ubuntu.22.04~jammy",
-        "docker-ce": "5:29.1.4-1~ubuntu.22.04~jammy",
-        "docker-ce-cli": "5:29.1.4-1~ubuntu.22.04~jammy",
+        "docker-ce": "5:29.1.5-1~ubuntu.22.04~jammy",
+        "docker-ce-cli": "5:29.1.5-1~ubuntu.22.04~jammy",
         "docker-compose-plugin": "5.0.1-1~ubuntu.22.04~jammy"
       },
       "podman": {
@@ -138,8 +138,8 @@
       "dockerd": {
         "containerd.io": "2.2.1-1~ubuntu.24.04~noble",
         "docker-buildx-plugin": "0.30.1-1~ubuntu.24.04~noble",
-        "docker-ce": "5:29.1.4-1~ubuntu.24.04~noble",
-        "docker-ce-cli": "5:29.1.4-1~ubuntu.24.04~noble",
+        "docker-ce": "5:29.1.5-1~ubuntu.24.04~noble",
+        "docker-ce-cli": "5:29.1.5-1~ubuntu.24.04~noble",
         "docker-compose-plugin": "5.0.1-1~ubuntu.24.04~noble"
       },
       "podman": {
