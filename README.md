@@ -6,7 +6,7 @@ Miget Container OS provides the base runtime used by [Miget's](https://miget.com
 
 Miget MicroVMs are lightweight virtual machines tailored for container execution. They boot a minimal userland, expose only the services required for workload orchestration, and rely on hardware virtualization for strong isolation. Compared with traditional nested containers, MicroVMs eliminate the need for user-namespace tricks or rootless shims-the workload runs with full privileges inside the VM while the host maintains isolation boundaries.
 
-## Current Release: 1.0.11
+## Current Release: 1.0.12
 
 ### Component Versions
 
@@ -25,62 +25,62 @@ Miget MicroVMs are lightweight virtual machines tailored for container execution
 
 - **Alpine 3.19 dockerd**
 
-  `1.0.11-alpine-3.19.9-dockerd`, `1.0.11-alpine3.19-dockerd`, `1.0.11-alpine3.19`, `alpine3.19`, `stable-alpine3.19-dockerd`
+  `1.0.12-alpine-3.19.9-dockerd`, `1.0.12-alpine3.19-dockerd`, `1.0.12-alpine3.19`, `alpine3.19`, `stable-alpine3.19-dockerd`
   ([`dockerfiles/alpine/3.19/dockerd.Dockerfile`](dockerfiles/alpine/3.19/dockerd.Dockerfile))
 
 - **Alpine 3.19 podman**
 
-  `1.0.11-alpine-3.19.9-podman`, `1.0.11-alpine3.19-podman`, `stable-alpine3.19-podman`
+  `1.0.12-alpine-3.19.9-podman`, `1.0.12-alpine3.19-podman`, `stable-alpine3.19-podman`
   ([`dockerfiles/alpine/3.19/podman.Dockerfile`](dockerfiles/alpine/3.19/podman.Dockerfile))
 
 - **Alpine 3.20 dockerd**
 
-  `1.0.11-alpine-3.20.8-dockerd`, `1.0.11-alpine3.20-dockerd`, `1.0.11-alpine3.20`, `alpine3.20`, `stable-alpine3.20-dockerd`
+  `1.0.12-alpine-3.20.9-dockerd`, `1.0.12-alpine3.20-dockerd`, `1.0.12-alpine3.20`, `alpine3.20`, `stable-alpine3.20-dockerd`
   ([`dockerfiles/alpine/3.20/dockerd.Dockerfile`](dockerfiles/alpine/3.20/dockerd.Dockerfile))
 
 - **Alpine 3.20 podman**
 
-  `1.0.11-alpine-3.20.8-podman`, `1.0.11-alpine3.20-podman`, `stable-alpine3.20-podman`
+  `1.0.12-alpine-3.20.9-podman`, `1.0.12-alpine3.20-podman`, `stable-alpine3.20-podman`
   ([`dockerfiles/alpine/3.20/podman.Dockerfile`](dockerfiles/alpine/3.20/podman.Dockerfile))
 
 - **Alpine 3.21 dockerd**
 
-  `1.0.11-alpine-3.21.5-dockerd`, `1.0.11-alpine3.21-dockerd`, `1.0.11-alpine3.21`, `alpine3.21`, `stable-alpine3.21-dockerd`
+  `1.0.12-alpine-3.21.6-dockerd`, `1.0.12-alpine3.21-dockerd`, `1.0.12-alpine3.21`, `alpine3.21`, `stable-alpine3.21-dockerd`
   ([`dockerfiles/alpine/3.21/dockerd.Dockerfile`](dockerfiles/alpine/3.21/dockerd.Dockerfile))
 
 - **Alpine 3.21 podman**
 
-  `1.0.11-alpine-3.21.5-podman`, `1.0.11-alpine3.21-podman`, `stable-alpine3.21-podman`
+  `1.0.12-alpine-3.21.6-podman`, `1.0.12-alpine3.21-podman`, `stable-alpine3.21-podman`
   ([`dockerfiles/alpine/3.21/podman.Dockerfile`](dockerfiles/alpine/3.21/podman.Dockerfile))
 
 - **Alpine 3.22 dockerd**
 
-  `1.0.11-alpine-3.22.2-dockerd`, `1.0.11-alpine3.22-dockerd`, `1.0.11-alpine3.22`, `alpine3.22`, `latest-alpine`, `stable-alpine3.22-dockerd`
+  `1.0.12-alpine-3.22.3-dockerd`, `1.0.12-alpine3.22-dockerd`, `1.0.12-alpine3.22`, `alpine3.22`, `latest-alpine`, `stable-alpine3.22-dockerd`
   ([`dockerfiles/alpine/3.22/dockerd.Dockerfile`](dockerfiles/alpine/3.22/dockerd.Dockerfile))
 
 - **Alpine 3.22 podman**
 
-  `1.0.11-alpine-3.22.2-podman`, `1.0.11-alpine3.22-podman`, `stable-alpine3.22-podman`
+  `1.0.12-alpine-3.22.3-podman`, `1.0.12-alpine3.22-podman`, `stable-alpine3.22-podman`
   ([`dockerfiles/alpine/3.22/podman.Dockerfile`](dockerfiles/alpine/3.22/podman.Dockerfile))
 
 - **Ubuntu 22.04 dockerd**
 
-  `1.0.11-ubuntu-22.04-dockerd`, `1.0.11-ubuntu22-dockerd`, `1.0.11-ubuntu22`, `ubuntu22`, `stable-ubuntu22-dockerd`
+  `1.0.12-ubuntu-22.04-dockerd`, `1.0.12-ubuntu22-dockerd`, `1.0.12-ubuntu22`, `ubuntu22`, `stable-ubuntu22-dockerd`
   ([`dockerfiles/ubuntu/22.04/dockerd.Dockerfile`](dockerfiles/ubuntu/22.04/dockerd.Dockerfile))
 
 - **Ubuntu 22.04 podman**
 
-  `1.0.11-ubuntu-22.04-podman`, `1.0.11-ubuntu22-podman`, `stable-ubuntu22-podman`
+  `1.0.12-ubuntu-22.04-podman`, `1.0.12-ubuntu22-podman`, `stable-ubuntu22-podman`
   ([`dockerfiles/ubuntu/22.04/podman.Dockerfile`](dockerfiles/ubuntu/22.04/podman.Dockerfile))
 
 - **Ubuntu 24.04 dockerd**
 
-  `1.0.11-ubuntu-24.04-dockerd`, `1.0.11-ubuntu24-dockerd`, `1.0.11-ubuntu24`, `ubuntu24`, `latest`, `stable-ubuntu24-dockerd`
+  `1.0.12-ubuntu-24.04-dockerd`, `1.0.12-ubuntu24-dockerd`, `1.0.12-ubuntu24`, `ubuntu24`, `latest`, `stable-ubuntu24-dockerd`
   ([`dockerfiles/ubuntu/24.04/dockerd.Dockerfile`](dockerfiles/ubuntu/24.04/dockerd.Dockerfile))
 
 - **Ubuntu 24.04 podman**
 
-  `1.0.11-ubuntu-24.04-podman`, `1.0.11-ubuntu24-podman`, `stable-ubuntu24-podman`
+  `1.0.12-ubuntu-24.04-podman`, `1.0.12-ubuntu24-podman`, `stable-ubuntu24-podman`
   ([`dockerfiles/ubuntu/24.04/podman.Dockerfile`](dockerfiles/ubuntu/24.04/podman.Dockerfile))
 
 
