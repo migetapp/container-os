@@ -63,7 +63,7 @@
   },
   "docker_compose_version": "v5.1.4",
   "metadata": {
-    "last_updated": "2026-06-19T09:28:37Z"
+    "last_updated": "2026-06-21T08:58:30Z"
   },
   "targets": {
     "alpine": {
@@ -240,5 +240,5 @@
       }
     }
   },
-  "version": "1.0.23"
+  "version": "1.0.24"
 }

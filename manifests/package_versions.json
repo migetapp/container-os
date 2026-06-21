@@ -111,7 +111,7 @@
         "supervisor": "4.2.1-1ubuntu1"
       },
       "dockerd": {
-        "containerd.io": "2.2.4-1~ubuntu.22.04~jammy",
+        "containerd.io": "2.2.5-1~ubuntu.22.04~jammy",
         "docker-buildx-plugin": "0.34.1-1~ubuntu.22.04~jammy",
         "docker-ce": "5:29.6.0-1~ubuntu.22.04~jammy",
         "docker-ce-cli": "5:29.6.0-1~ubuntu.22.04~jammy",
@@ -136,7 +136,7 @@
         "supervisor": "4.2.5-1ubuntu0.1"
       },
       "dockerd": {
-        "containerd.io": "2.2.4-1~ubuntu.24.04~noble",
+        "containerd.io": "2.2.5-1~ubuntu.24.04~noble",
         "docker-buildx-plugin": "0.34.1-1~ubuntu.24.04~noble",
         "docker-ce": "5:29.6.0-1~ubuntu.24.04~noble",
         "docker-ce-cli": "5:29.6.0-1~ubuntu.24.04~noble",
