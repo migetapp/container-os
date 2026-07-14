@@ -106,12 +106,12 @@
         "fuse-overlayfs": "1.7.1-1",
         "fuse3": "3.10.5-1build1",
         "iptables": "1.8.7-1ubuntu5.2",
-        "openssh-server": "1:8.9p1-3ubuntu0.15",
+        "openssh-server": "1:8.9p1-3ubuntu0.16",
         "sudo": "1.9.9-1ubuntu2.6",
         "supervisor": "4.2.1-1ubuntu1"
       },
       "dockerd": {
-        "containerd.io": "2.2.5-1~ubuntu.22.04~jammy",
+        "containerd.io": "2.2.6-1~ubuntu.22.04~jammy",
         "docker-buildx-plugin": "0.35.0-1~ubuntu.22.04~jammy",
         "docker-ce": "5:29.6.1-1~ubuntu.22.04~jammy",
         "docker-ce-cli": "5:29.6.1-1~ubuntu.22.04~jammy",
@@ -127,16 +127,16 @@
     "24.04": {
       "common": {
         "cron": "3.0pl1-184ubuntu2",
-        "curl": "8.5.0-2ubuntu10.10",
+        "curl": "8.5.0-2ubuntu10.11",
         "fuse-overlayfs": "1.13-1",
         "fuse3": "3.14.0-5build1",
         "iptables": "1.8.10-3ubuntu2",
-        "openssh-server": "1:9.6p1-3ubuntu13.16",
+        "openssh-server": "1:9.6p1-3ubuntu13.18",
         "sudo": "1.9.15p5-3ubuntu5.24.04.2",
         "supervisor": "4.2.5-1ubuntu0.1"
       },
       "dockerd": {
-        "containerd.io": "2.2.5-1~ubuntu.24.04~noble",
+        "containerd.io": "2.2.6-1~ubuntu.24.04~noble",
         "docker-buildx-plugin": "0.35.0-1~ubuntu.24.04~noble",
         "docker-ce": "5:29.6.1-1~ubuntu.24.04~noble",
         "docker-ce-cli": "5:29.6.1-1~ubuntu.24.04~noble",
