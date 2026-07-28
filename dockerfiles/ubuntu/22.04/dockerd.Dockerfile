@@ -22,6 +22,8 @@ RUN apt-get update && apt-get install -y \
     openssh-server \
     cron \
     sudo \
+    e2fsprogs \
+    util-linux \
     docker-ce \
     docker-ce-cli \
     containerd.io \

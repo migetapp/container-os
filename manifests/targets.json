@@ -79,7 +79,10 @@
             "iptables-legacy",
             "fuse-overlayfs",
             "fuse3",
-            "sudo"
+            "sudo",
+            "e2fsprogs",
+            "e2fsprogs-extra",
+            "util-linux"
           ],
           "dockerd": [
             "docker",
@@ -106,7 +109,10 @@
             "iptables-legacy",
             "fuse-overlayfs",
             "fuse3",
-            "sudo"
+            "sudo",
+            "e2fsprogs",
+            "e2fsprogs-extra",
+            "util-linux"
           ],
           "dockerd": [
             "docker",
@@ -133,7 +139,10 @@
             "iptables-legacy",
             "fuse-overlayfs",
             "fuse3",
-            "sudo"
+            "sudo",
+            "e2fsprogs",
+            "e2fsprogs-extra",
+            "util-linux"
           ],
           "dockerd": [
             "docker",
@@ -160,7 +169,10 @@
             "iptables-legacy",
             "fuse-overlayfs",
             "fuse3",
-            "sudo"
+            "sudo",
+            "e2fsprogs",
+            "e2fsprogs-extra",
+            "util-linux"
           ],
           "dockerd": [
             "docker",
@@ -189,7 +201,9 @@
             "fuse3",
             "openssh-server",
             "cron",
-            "sudo"
+            "sudo",
+            "e2fsprogs",
+            "util-linux"
           ],
           "dockerd": [
             "docker-ce",
@@ -218,7 +232,9 @@
             "fuse3",
             "openssh-server",
             "cron",
-            "sudo"
+            "sudo",
+            "e2fsprogs",
+            "util-linux"
           ],
           "dockerd": [
             "docker-ce",

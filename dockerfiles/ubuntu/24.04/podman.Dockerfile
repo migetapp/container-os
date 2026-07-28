@@ -14,6 +14,8 @@ RUN apt-get update && apt-get install -y \
     openssh-server \
     cron \
     sudo \
+    e2fsprogs \
+    util-linux \
     ca-certificates \
     gnupg \
     lsb-release \

@@ -11,6 +11,9 @@ RUN apk add --no-cache \
     fuse-overlayfs \
     fuse3 \
     sudo \
+    e2fsprogs \
+    e2fsprogs-extra \
+    util-linux \
     docker \
     docker-cli-compose \
     containerd
