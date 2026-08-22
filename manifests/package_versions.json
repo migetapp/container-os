@@ -109,12 +109,12 @@
       }
     }
   },
-  "docker_compose_version": "v5.4.0",
+  "docker_compose_version": "v5.5.0",
   "ubuntu": {
     "22.04": {
       "common": {
         "cron": "3.0pl1-137ubuntu3",
-        "curl": "7.81.0-1ubuntu1.25",
+        "curl": "7.81.0-1ubuntu1.26",
         "e2fsprogs": "1.46.5-2ubuntu1.2",
         "fuse-overlayfs": "1.7.1-1",
         "fuse3": "3.10.5-1build1",
@@ -129,7 +129,7 @@
         "docker-buildx-plugin": "0.36.1-1~ubuntu.22.04~jammy",
         "docker-ce": "5:29.7.2-1~ubuntu.22.04~jammy",
         "docker-ce-cli": "5:29.7.2-1~ubuntu.22.04~jammy",
-        "docker-compose-plugin": "5.4.0-1~ubuntu.22.04~jammy"
+        "docker-compose-plugin": "5.5.0-1~ubuntu.22.04~jammy"
       },
       "podman": {
         "podman": "3.4.4+ds1-1ubuntu1.22.04.3",
@@ -141,7 +141,7 @@
     "24.04": {
       "common": {
         "cron": "3.0pl1-184ubuntu2",
-        "curl": "8.5.0-2ubuntu10.11",
+        "curl": "8.5.0-2ubuntu10.12",
         "e2fsprogs": "1.47.0-2.4~exp1ubuntu4.1",
         "fuse-overlayfs": "1.13-1",
         "fuse3": "3.14.0-5build1",
@@ -156,7 +156,7 @@
         "docker-buildx-plugin": "0.36.1-1~ubuntu.24.04~noble",
         "docker-ce": "5:29.7.2-1~ubuntu.24.04~noble",
         "docker-ce-cli": "5:29.7.2-1~ubuntu.24.04~noble",
-        "docker-compose-plugin": "5.4.0-1~ubuntu.24.04~noble"
+        "docker-compose-plugin": "5.5.0-1~ubuntu.24.04~noble"
       },
       "podman": {
         "ca-certificates": "20260601~24.04.1",
