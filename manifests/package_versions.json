@@ -93,7 +93,7 @@
         "openssh": "10.0_p1-r10",
         "sudo": "1.9.17_p2-r0",
         "supervisor": "4.2.5-r5",
-        "util-linux": "2.41-r9"
+        "util-linux": "2.41.6-r0"
       },
       "dockerd": {
         "containerd": "2.1.5-r2",
@@ -109,27 +109,27 @@
       }
     }
   },
-  "docker_compose_version": "v5.4.0",
+  "docker_compose_version": "v5.5.1",
   "ubuntu": {
     "22.04": {
       "common": {
         "cron": "3.0pl1-137ubuntu3",
-        "curl": "7.81.0-1ubuntu1.25",
+        "curl": "7.81.0-1ubuntu1.27",
         "e2fsprogs": "1.46.5-2ubuntu1.2",
         "fuse-overlayfs": "1.7.1-1",
         "fuse3": "3.10.5-1build1",
         "iptables": "1.8.7-1ubuntu5.2",
-        "openssh-server": "1:8.9p1-3ubuntu0.16",
+        "openssh-server": "1:8.9p1-3ubuntu0.17",
         "sudo": "1.9.9-1ubuntu2.6",
         "supervisor": "4.2.1-1ubuntu1",
-        "util-linux": "2.37.2-4ubuntu3.5"
+        "util-linux": "2.37.2-4ubuntu3.6"
       },
       "dockerd": {
-        "containerd.io": "2.3.3-1~ubuntu.22.04~jammy",
-        "docker-buildx-plugin": "0.36.1-1~ubuntu.22.04~jammy",
-        "docker-ce": "5:29.7.2-1~ubuntu.22.04~jammy",
-        "docker-ce-cli": "5:29.7.2-1~ubuntu.22.04~jammy",
-        "docker-compose-plugin": "5.4.0-1~ubuntu.22.04~jammy"
+        "containerd.io": "2.3.4-2~ubuntu.22.04~jammy",
+        "docker-buildx-plugin": "0.37.0-1~ubuntu.22.04~jammy",
+        "docker-ce": "5:29.8.0-1~ubuntu.22.04~jammy",
+        "docker-ce-cli": "5:29.8.0-1~ubuntu.22.04~jammy",
+        "docker-compose-plugin": "5.5.1-1~ubuntu.22.04~jammy"
       },
       "podman": {
         "podman": "3.4.4+ds1-1ubuntu1.22.04.3",
@@ -141,26 +141,26 @@
     "24.04": {
       "common": {
         "cron": "3.0pl1-184ubuntu2",
-        "curl": "8.5.0-2ubuntu10.11",
+        "curl": "8.5.0-2ubuntu10.13",
         "e2fsprogs": "1.47.0-2.4~exp1ubuntu4.1",
         "fuse-overlayfs": "1.13-1",
         "fuse3": "3.14.0-5build1",
         "iptables": "1.8.10-3ubuntu2",
-        "openssh-server": "1:9.6p1-3ubuntu13.18",
+        "openssh-server": "1:9.6p1-3ubuntu13.19",
         "sudo": "1.9.15p5-3ubuntu5.24.04.2",
         "supervisor": "4.2.5-1ubuntu0.1",
-        "util-linux": "2.39.3-9ubuntu6.5"
+        "util-linux": "2.39.3-9ubuntu6.6"
       },
       "dockerd": {
-        "containerd.io": "2.3.3-1~ubuntu.24.04~noble",
-        "docker-buildx-plugin": "0.36.1-1~ubuntu.24.04~noble",
-        "docker-ce": "5:29.7.2-1~ubuntu.24.04~noble",
-        "docker-ce-cli": "5:29.7.2-1~ubuntu.24.04~noble",
-        "docker-compose-plugin": "5.4.0-1~ubuntu.24.04~noble"
+        "containerd.io": "2.3.4-2~ubuntu.24.04~noble",
+        "docker-buildx-plugin": "0.37.0-1~ubuntu.24.04~noble",
+        "docker-ce": "5:29.8.0-1~ubuntu.24.04~noble",
+        "docker-ce-cli": "5:29.8.0-1~ubuntu.24.04~noble",
+        "docker-compose-plugin": "5.5.1-1~ubuntu.24.04~noble"
       },
       "podman": {
         "ca-certificates": "20260601~24.04.1",
-        "gnupg": "2.4.4-2ubuntu17.4",
+        "gnupg": "2.4.4-2ubuntu17.6",
         "lsb-release": "12.0-2",
         "podman": "4.9.3+ds1-1ubuntu0.2",
         "podman-docker": "4.9.3+ds1-1ubuntu0.2",
