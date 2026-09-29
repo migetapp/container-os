@@ -59,6 +59,26 @@
       "engine": "podman",
       "os": "ubuntu",
       "version": "24.04"
+    },
+    "stable-alpine3.23-dockerd": {
+      "engine": "dockerd",
+      "os": "alpine",
+      "version": "3.23"
+    },
+    "stable-alpine3.23-podman": {
+      "engine": "podman",
+      "os": "alpine",
+      "version": "3.23"
+    },
+    "stable-alpine3.24-dockerd": {
+      "engine": "dockerd",
+      "os": "alpine",
+      "version": "3.24"
+    },
+    "stable-alpine3.24-podman": {
+      "engine": "podman",
+      "os": "alpine",
+      "version": "3.24"
     }
   },
   "docker_compose_version": "v5.4.0",
@@ -186,6 +206,66 @@
             "shadow-subids"
           ]
         }
+      },
+      "3.23": {
+        "alias_patch": "3.23.6",
+        "base": "3.23",
+        "packages": {
+          "common": [
+            "bash",
+            "supervisor",
+            "openssh",
+            "dcron",
+            "iptables-legacy",
+            "fuse-overlayfs",
+            "fuse3",
+            "sudo",
+            "e2fsprogs",
+            "e2fsprogs-extra",
+            "util-linux"
+          ],
+          "dockerd": [
+            "docker",
+            "docker-cli-compose",
+            "containerd"
+          ],
+          "podman": [
+            "podman",
+            "podman-docker",
+            "slirp4netns",
+            "shadow-subids"
+          ]
+        }
+      },
+      "3.24": {
+        "alias_patch": "3.24.2",
+        "base": "3.24",
+        "packages": {
+          "common": [
+            "bash",
+            "supervisor",
+            "openssh",
+            "dcron",
+            "iptables-legacy",
+            "fuse-overlayfs",
+            "fuse3",
+            "sudo",
+            "e2fsprogs",
+            "e2fsprogs-extra",
+            "util-linux"
+          ],
+          "dockerd": [
+            "docker",
+            "docker-cli-compose",
+            "containerd"
+          ],
+          "podman": [
+            "podman",
+            "podman-docker",
+            "slirp4netns",
+            "shadow-subids"
+          ]
+        }
       }
     },
     "ubuntu": {
@@ -256,5 +336,5 @@
       }
     }
   },
-  "version": "1.0.29"
+  "version": "1.1.0"
 }
