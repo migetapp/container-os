@@ -8,7 +8,9 @@
       "3.19": "https://hub.docker.com/_/alpine?tab=tags&page=1&name=3.19",
       "3.20": "https://hub.docker.com/_/alpine?tab=tags&page=1&name=3.20",
       "3.21": "https://hub.docker.com/_/alpine?tab=tags&page=1&name=3.21",
-      "3.22": "https://hub.docker.com/_/alpine?tab=tags&page=1&name=3.22"
+      "3.22": "https://hub.docker.com/_/alpine?tab=tags&page=1&name=3.22",
+      "3.23": "https://hub.docker.com/_/alpine?tab=tags&page=1&name=3.23",
+      "3.24": "https://hub.docker.com/_/alpine?tab=tags&page=1&name=3.24"
     }
   }
 }

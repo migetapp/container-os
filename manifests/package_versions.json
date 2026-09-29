@@ -4,10 +4,10 @@
       "common": {
         "bash": "5.2.21-r0",
         "dcron": "4.5-r9",
-        "e2fsprogs": "1.47.0-r5",
-        "e2fsprogs-extra": "1.47.0-r5",
+        "e2fsprogs": "e2fsprogs-1.47.0-r5",
+        "e2fsprogs-extra": "e2fsprogs-extra-1.47.0-r5",
         "fuse-overlayfs": "1.13-r0",
-        "fuse3": "3.16.2-r0",
+        "fuse3": "fuse3-3.16.2-r0",
         "iptables-legacy": "1.8.10-r3",
         "openssh": "9.6_p1-r2",
         "sudo": "1.9.15_p2-r0",
@@ -23,7 +23,7 @@
         "podman": "4.8.3-r3",
         "podman-docker": "4.8.3-r3",
         "shadow-subids": "4.14.2-r0",
-        "slirp4netns": "1.2.2-r0",
+        "slirp4netns": "slirp4netns-1.2.2-r0",
         "uidmap": "1.4.3.19-r2"
       }
     },
@@ -31,10 +31,10 @@
       "common": {
         "bash": "5.2.26-r0",
         "dcron": "4.5-r9",
-        "e2fsprogs": "1.47.0-r5",
-        "e2fsprogs-extra": "1.47.0-r5",
+        "e2fsprogs": "e2fsprogs-1.47.0-r5",
+        "e2fsprogs-extra": "e2fsprogs-extra-1.47.0-r5",
         "fuse-overlayfs": "1.14-r0",
-        "fuse3": "3.16.2-r0",
+        "fuse3": "fuse3-3.16.2-r0",
         "iptables-legacy": "1.8.10-r3",
         "openssh": "9.7_p1-r5",
         "sudo": "1.9.15_p5-r0",
@@ -50,7 +50,7 @@
         "podman": "5.2.5-r0",
         "podman-docker": "5.2.5-r0",
         "shadow-subids": "4.15.1-r0",
-        "slirp4netns": "1.2.3-r0",
+        "slirp4netns": "slirp4netns-1.2.3-r0",
         "uidmap": "1.4.3.20-r2"
       }
     },
@@ -58,10 +58,10 @@
       "common": {
         "bash": "5.2.37-r0",
         "dcron": "4.6-r0",
-        "e2fsprogs": "1.47.1-r1",
-        "e2fsprogs-extra": "1.47.1-r1",
+        "e2fsprogs": "e2fsprogs-1.47.1-r1",
+        "e2fsprogs-extra": "e2fsprogs-extra-1.47.1-r1",
         "fuse-overlayfs": "1.14-r0",
-        "fuse3": "3.16.2-r1",
+        "fuse3": "fuse3-3.16.2-r1",
         "iptables-legacy": "1.8.11-r1",
         "openssh": "9.9_p2-r0",
         "sudo": "1.9.17_p1-r0",
@@ -77,7 +77,7 @@
         "podman": "5.3.2-r5",
         "podman-docker": "5.3.2-r5",
         "shadow-subids": "4.16.0-r1",
-        "slirp4netns": "1.3.1-r0",
+        "slirp4netns": "slirp4netns-1.3.1-r0",
         "uidmap": "1.4.3.21-r2"
       }
     },
@@ -85,15 +85,15 @@
       "common": {
         "bash": "5.2.37-r0",
         "dcron": "4.6-r0",
-        "e2fsprogs": "1.47.2-r2",
-        "e2fsprogs-extra": "1.47.2-r2",
+        "e2fsprogs": "e2fsprogs-1.47.2-r2",
+        "e2fsprogs-extra": "e2fsprogs-extra-1.47.2-r2",
         "fuse-overlayfs": "1.15-r0",
-        "fuse3": "3.16.2-r1",
+        "fuse3": "fuse3-3.16.2-r1",
         "iptables-legacy": "1.8.11-r1",
         "openssh": "10.0_p1-r10",
         "sudo": "1.9.17_p2-r0",
         "supervisor": "4.2.5-r5",
-        "util-linux": "2.41-r9"
+        "util-linux": "2.41.6-r1"
       },
       "dockerd": {
         "containerd": "2.1.5-r2",
@@ -104,8 +104,60 @@
         "podman": "5.6.2-r3",
         "podman-docker": "5.6.2-r3",
         "shadow-subids": "4.17.3-r0",
-        "slirp4netns": "1.3.1-r0",
+        "slirp4netns": "slirp4netns-1.3.1-r0",
         "uidmap": "1.4.3.22-r2"
+      }
+    },
+    "3.23": {
+      "common": {
+        "bash": "5.3.3-r1",
+        "supervisor": "4.3.0-r0",
+        "openssh": "10.2_p1-r0",
+        "dcron": "4.6-r0",
+        "iptables-legacy": "1.8.11-r1",
+        "fuse-overlayfs": "1.16-r0",
+        "fuse3": "fuse3-3.18.3-r0",
+        "sudo": "1.9.17_p2-r0",
+        "e2fsprogs": "e2fsprogs-1.47.3-r0",
+        "e2fsprogs-extra": "e2fsprogs-extra-1.47.3-r0",
+        "util-linux": "2.41.6-r1"
+      },
+      "dockerd": {
+        "docker": "29.5.2-r0",
+        "docker-cli-compose": "2.40.3-r6",
+        "containerd": "2.2.0-r8"
+      },
+      "podman": {
+        "podman": "5.7.0-r6",
+        "podman-docker": "5.7.0-r6",
+        "slirp4netns": "slirp4netns-1.3.3-r0",
+        "shadow-subids": "4.18.0-r0"
+      }
+    },
+    "3.24": {
+      "common": {
+        "bash": "5.3.9-r1",
+        "supervisor": "4.3.0-r1",
+        "openssh": "10.3_p1-r1",
+        "dcron": "4.6-r0",
+        "iptables-legacy": "1.8.13-r0",
+        "fuse-overlayfs": "1.16-r0",
+        "fuse3": "fuse3-3.18.3-r0",
+        "sudo": "1.9.17_p2-r1",
+        "e2fsprogs": "e2fsprogs-1.47.4-r0",
+        "e2fsprogs-extra": "e2fsprogs-extra-1.47.4-r0",
+        "util-linux": "2.42.3-r1"
+      },
+      "dockerd": {
+        "docker": "29.5.3-r1",
+        "docker-cli-compose": "5.1.4-r1",
+        "containerd": "2.3.6-r0"
+      },
+      "podman": {
+        "podman": "5.8.6-r1",
+        "podman-docker": "5.8.6-r1",
+        "slirp4netns": "slirp4netns-1.3.3-r0",
+        "shadow-subids": "4.18.0-r1"
       }
     }
   },
@@ -114,22 +166,22 @@
     "22.04": {
       "common": {
         "cron": "3.0pl1-137ubuntu3",
-        "curl": "7.81.0-1ubuntu1.25",
+        "curl": "7.81.0-1ubuntu1.29",
         "e2fsprogs": "1.46.5-2ubuntu1.2",
         "fuse-overlayfs": "1.7.1-1",
         "fuse3": "3.10.5-1build1",
         "iptables": "1.8.7-1ubuntu5.2",
-        "openssh-server": "1:8.9p1-3ubuntu0.16",
+        "openssh-server": "1:8.9p1-3ubuntu0.17",
         "sudo": "1.9.9-1ubuntu2.6",
         "supervisor": "4.2.1-1ubuntu1",
-        "util-linux": "2.37.2-4ubuntu3.5"
+        "util-linux": "2.37.2-4ubuntu3.6"
       },
       "dockerd": {
-        "containerd.io": "2.3.3-1~ubuntu.22.04~jammy",
-        "docker-buildx-plugin": "0.36.1-1~ubuntu.22.04~jammy",
-        "docker-ce": "5:29.7.2-1~ubuntu.22.04~jammy",
-        "docker-ce-cli": "5:29.7.2-1~ubuntu.22.04~jammy",
-        "docker-compose-plugin": "5.4.0-1~ubuntu.22.04~jammy"
+        "containerd.io": "2.3.6-1~ubuntu.22.04~jammy",
+        "docker-buildx-plugin": "0.37.1-1~ubuntu.22.04~jammy",
+        "docker-ce": "5:29.8.1-1~ubuntu.22.04~jammy",
+        "docker-ce-cli": "5:29.8.1-1~ubuntu.22.04~jammy",
+        "docker-compose-plugin": "5.5.1-1~ubuntu.22.04~jammy"
       },
       "podman": {
         "podman": "3.4.4+ds1-1ubuntu1.22.04.3",
@@ -141,26 +193,26 @@
     "24.04": {
       "common": {
         "cron": "3.0pl1-184ubuntu2",
-        "curl": "8.5.0-2ubuntu10.11",
+        "curl": "8.5.0-2ubuntu10.15",
         "e2fsprogs": "1.47.0-2.4~exp1ubuntu4.1",
         "fuse-overlayfs": "1.13-1",
         "fuse3": "3.14.0-5build1",
         "iptables": "1.8.10-3ubuntu2",
-        "openssh-server": "1:9.6p1-3ubuntu13.18",
-        "sudo": "1.9.15p5-3ubuntu5.24.04.2",
+        "openssh-server": "1:9.6p1-3ubuntu13.19",
+        "sudo": "1.9.15p5-3ubuntu5.24.04.3",
         "supervisor": "4.2.5-1ubuntu0.1",
-        "util-linux": "2.39.3-9ubuntu6.5"
+        "util-linux": "2.39.3-9ubuntu6.6"
       },
       "dockerd": {
-        "containerd.io": "2.3.3-1~ubuntu.24.04~noble",
-        "docker-buildx-plugin": "0.36.1-1~ubuntu.24.04~noble",
-        "docker-ce": "5:29.7.2-1~ubuntu.24.04~noble",
-        "docker-ce-cli": "5:29.7.2-1~ubuntu.24.04~noble",
-        "docker-compose-plugin": "5.4.0-1~ubuntu.24.04~noble"
+        "containerd.io": "2.3.6-1~ubuntu.24.04~noble",
+        "docker-buildx-plugin": "0.37.1-1~ubuntu.24.04~noble",
+        "docker-ce": "5:29.8.1-1~ubuntu.24.04~noble",
+        "docker-ce-cli": "5:29.8.1-1~ubuntu.24.04~noble",
+        "docker-compose-plugin": "5.5.1-1~ubuntu.24.04~noble"
       },
       "podman": {
         "ca-certificates": "20260601~24.04.1",
-        "gnupg": "2.4.4-2ubuntu17.4",
+        "gnupg": "2.4.4-2ubuntu17.6",
         "lsb-release": "12.0-2",
         "podman": "4.9.3+ds1-1ubuntu0.2",
         "podman-docker": "4.9.3+ds1-1ubuntu0.2",
