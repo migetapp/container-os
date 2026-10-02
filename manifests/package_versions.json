@@ -127,8 +127,8 @@
       "dockerd": {
         "containerd.io": "2.3.6-1~ubuntu.22.04~jammy",
         "docker-buildx-plugin": "0.37.1-1~ubuntu.22.04~jammy",
-        "docker-ce": "5:29.8.1-1~ubuntu.22.04~jammy",
-        "docker-ce-cli": "5:29.8.1-1~ubuntu.22.04~jammy",
+        "docker-ce": "5:29.8.2-1~ubuntu.22.04~jammy",
+        "docker-ce-cli": "5:29.8.2-1~ubuntu.22.04~jammy",
         "docker-compose-plugin": "5.5.1-1~ubuntu.22.04~jammy"
       },
       "podman": {
@@ -154,8 +154,8 @@
       "dockerd": {
         "containerd.io": "2.3.6-1~ubuntu.24.04~noble",
         "docker-buildx-plugin": "0.37.1-1~ubuntu.24.04~noble",
-        "docker-ce": "5:29.8.1-1~ubuntu.24.04~noble",
-        "docker-ce-cli": "5:29.8.1-1~ubuntu.24.04~noble",
+        "docker-ce": "5:29.8.2-1~ubuntu.24.04~noble",
+        "docker-ce-cli": "5:29.8.2-1~ubuntu.24.04~noble",
         "docker-compose-plugin": "5.5.1-1~ubuntu.24.04~noble"
       },
       "podman": {
