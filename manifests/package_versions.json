@@ -109,7 +109,7 @@
       }
     }
   },
-  "docker_compose_version": "v5.5.1",
+  "docker_compose_version": "v5.6.0",
   "ubuntu": {
     "22.04": {
       "common": {
@@ -129,7 +129,7 @@
         "docker-buildx-plugin": "0.37.1-1~ubuntu.22.04~jammy",
         "docker-ce": "5:29.8.2-1~ubuntu.22.04~jammy",
         "docker-ce-cli": "5:29.8.2-1~ubuntu.22.04~jammy",
-        "docker-compose-plugin": "5.5.1-1~ubuntu.22.04~jammy"
+        "docker-compose-plugin": "5.6.0-1~ubuntu.22.04~jammy"
       },
       "podman": {
         "podman": "3.4.4+ds1-1ubuntu1.22.04.3",
@@ -156,7 +156,7 @@
         "docker-buildx-plugin": "0.37.1-1~ubuntu.24.04~noble",
         "docker-ce": "5:29.8.2-1~ubuntu.24.04~noble",
         "docker-ce-cli": "5:29.8.2-1~ubuntu.24.04~noble",
-        "docker-compose-plugin": "5.5.1-1~ubuntu.24.04~noble"
+        "docker-compose-plugin": "5.6.0-1~ubuntu.24.04~noble"
       },
       "podman": {
         "ca-certificates": "20260601~24.04.1",
